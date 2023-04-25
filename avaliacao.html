@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Formulário de avaliacão</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="ri-plane-line"></i><span>Traveller</span></a>
+
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="./hoteis.html">Trabalho</a></li>
+            <li><a href="./hoteis.html">Negócios</a></li>
+            <li><a href="./hoteis.html">Turismo</a></li>
+        </ul>
+
+        <div class="user_register">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+
+    <main class="conteudo_avaliacao">
+
+        <article class="form">
+            <h2 class="form_titulo">Avaliar Hotel</h2>
+            <form name="dados" id="dados" action="">
+
+                <div class="selecao_hotel">
+                    <h3 class="titulo_selecao">Selecione o Hotel</h3>
+                    <select id="hotel" required>
+                        <option value="0">Selecione uma opção</option>
+                        <option value="1">Blue Tree Premium Morumbi</option>
+                        <option value="2">Blue Tree Premium Paulista</option>
+                        <option value="3">Bourbon Convention Ibirapuera</option>
+                        <option value="4">Confort Ibirapuera</option>
+                        <option value="5">Golden Tulip Paulista Plaza</option>
+                        <option value="6">IBIS Styles São Paulo Anhembi</option>
+                        <option value="7">Mercure São Paulo Pamplona</option>
+                        <option value="8">Renaissance São Paulo Hotel</option>
+                        <option value="9">Sheraton São Paulo WTC Hotel</option>
+                    </select>
+                </div>
+
+                <div class="rating_star">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)">
+                        <img src="img/star0.png" id="s1"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                        <img src="img/star0.png" id="s2"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                        <img src="img/star0.png" id="s3"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                        <img src="img/star0.png" id="s4"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                        <img src="img/star0.png" id="s5"></a>
+                    <p id="rating">0</p>
+
+                    <!-- Sistema de rating com estrelas usando Js puro, conhecimento obtido no artigo:
+                    https://www.blogson.com.br/sistema-de-rating-avaliacao-em-html-e-javascript-parte-1/ -->
+
+                </div> 
+
+                <div class="input_botao">
+                    <input type="submit" id="enviar" value="Enviar avaliacão">
+                </div>
+
+            </form>
+        </article>
+
+    </main>
+
+</body>
+
+</html>
